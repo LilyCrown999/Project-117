@@ -39,7 +39,7 @@ function App() {
                    </td>
                    <td>
                      <select className='form-control' onChange={(e) => {setVal(e.target.value)}} >
-                       <option >-Select -</option>
+                       <option selected disabled hidden >-Select -</option>
                        <option value="firstname">Firstname</option>
                        <option value="lastname" >Lastname</option>
                      </select>
