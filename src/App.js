@@ -18,7 +18,6 @@ function App (){
   }, [])
 
   function search(rows) {
-    console.log(val)
     if (val === "lastname"){
       return rows.filter( row => row.lastname.toLowerCase().indexOf(q) > -1)
       
