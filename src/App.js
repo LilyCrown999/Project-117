@@ -1,79 +1,56 @@
-
 import Data from './Data.json';
-import Table from 'react-bootstrap/Table'
+import DataTable from './datatable';
+import { useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useEffect, useState } from 'react';
+import { Table } from 'react-bootstrap';
 
 
-function App() {
 
-   const [data, setUserData] = useState([]);
-   const [userSearchData, setUserSearchData] = useState([]);
-   const [name, setName] = useState('');
-   const [ val, setVal] = useState("")
+function App (){
+  const [data, setData] = useState([]);
+  const [q, setQ] = useState("")
+  const [ val, setVal] = useState("")
 
 
-   useEffect( () => {
-     const data = Data;
-     setUserData(data)
-     setUserSearchData(data)
-   },[])
+  useEffect(() => {
+    const data = Data;
+    setData(data)
+  }, [])
 
-   const handleSearch = ( ) => {
-     if (val === "firstname"){
-      const newData = data.filter(x => x.firstname === (name === "" ? x.firstname : name) )
-      setUserSearchData(newData)
-     } else{
-      const newData = data.filter(x => x.lastname === (name === "" ? x.lastname : name) )
-      setUserSearchData(newData)
-     }
+  function search(rows) {
+    console.log(val)
+    if (val === "lastname"){
+      return rows.filter( row => row.lastname.toLowerCase().indexOf(q) > -1)
+      
+    } else {
+      return rows.filter( row => row.firstname.toLowerCase().indexOf(q) > -1)
+    }
+  }
+  
 
-   }
-
-  return (
-             <div onLoad={() => ( setUserData(Data))}>
-               <Table>
-                 <tr>
-                   <td>
-                     <input className='form-control' type="text" placeholder='Enter your name ...' onChange={(e) => {setName(e.target.value)}} />
-                   </td>
-                   <td>
-                     <select className='form-control' onChange={(e) => {setVal(e.target.value)}} >
-                       <option selected disabled hidden >-Select -</option>
-                       <option value="firstname">Firstname</option>
-                       <option value="lastname" >Lastname</option>
-                     </select>
-                   </td>
-                   <td>
-                     <button className='btn btn-secondary' onClick={() => handleSearch()}> <i className='search'>  Search  </i></button>
-                   </td>
-                 </tr>
-               </Table>
-               <Table striped bordered hover size="sm">
-                 <thead>
-                   <tr>
-                     <th> Id </th>
-                     <th> First Name </th>
-                     <th> Last Name </th>
-                     <th> Status </th>
-                     <th> Gender </th>
-                   </tr>
-                 </thead> 
-                 <tbody>
-                   {
-                     userSearchData && userSearchData.length > 0 ?
-                 userSearchData.map(user => (
-                 <tr key={user.id}>
-                   <td> {user.id} </td>
-                   <td> {user.firstname} </td>
-                   <td> {user.lastname} </td>
-                   <td> {user.status} </td>
-                   <td> {user.gender} </td>
-                 </tr>
-                 )): "No data" }
-                 </tbody>
-               </Table>
-             </div>
+  return(
+    <>
+          {/* <div> <Take /></div> */}
+          <div>
+            <Table>
+              <tr>
+                <td>
+                  <input className='form-control' type="text" value={q} onChange={(e) => setQ(e.target.value)} />
+                </td>
+                <td>
+                  <select className='form-control' onChange={(e) => {setVal(e.target.value)}} required="true" >
+                        <option selected disabled hidden >-Select -</option>
+                        <option value="firstname">Firstname</option>
+                        <option value="lastname" >Lastname</option>
+                  </select>
+                </td>
+              </tr>
+            </Table>
+          </div>
+          <div>
+            <DataTable data={search(data)} />
+          </div>
+    </>
   )
 }
 

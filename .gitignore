@@ -13,6 +13,8 @@ node_modules
 # production
 /build
 
+src/Take1.js
+
 # misc
 .DS_Store
 .env.local
