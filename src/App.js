@@ -22,8 +22,12 @@ function App (){
     if (val === "lastname"){
       return rows.filter( row => row.lastname.toLowerCase().indexOf(q) > -1)
       
-    } else {
+    } if( val === "firstname") {
       return rows.filter( row => row.firstname.toLowerCase().indexOf(q) > -1)
+    }
+
+    else {
+      return rows 
     }
   }
   
