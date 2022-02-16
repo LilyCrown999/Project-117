@@ -1,7 +1,8 @@
-import Tables from './Table';
+
+import Page from './Page';
 
 export const App = () => {
   return (
-      <Tables />
+      <Page />
   )
 }
