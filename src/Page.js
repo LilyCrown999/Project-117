@@ -101,7 +101,7 @@ const Page = () => {
                   </select>
                 </td>
                 <td>
-                <button className='btn btn-secondary ' onClick={() => (
+                <button className='btn btn-secondary form-control' onClick={() => (
                   search2(data_2),
                   search3(data_3),
                   search4(data_4),
