@@ -14,6 +14,8 @@ node_modules
 /build
 
 src/Take1.js
+src/Table.js
+
 
 # misc
 .DS_Store

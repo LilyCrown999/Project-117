@@ -1,0 +1,26 @@
+[
+        {
+            "CustomerId": "I10123445",
+            "FullName": "Olufemi Samuel Ademola",
+            "PermitNumber": "K2345",
+            "ValidFrom": "20211010",
+            "ValidTo": "20221010",
+            "PermitType": "WorkPermit",
+            "VisaNumber": "AD987677",
+            "ArrivalDate": "20210910",
+            "PermitStatus": "Valid",
+            "Language": "en",
+            "UserLocation": "branch01",
+            "RecordDate": "20210506",
+            "RecordTime": "1019",
+            "Operator": "brother",
+            "Operation": "Create",
+            "Workstation": "ty35567-866",
+            "RecordCounter": "1"
+        },
+        {
+            "CustomerId": "I8298074",
+            "FullName": "Lola Ifejowa",
+            "PermitNumber": "CKKK"
+        }
+    ]

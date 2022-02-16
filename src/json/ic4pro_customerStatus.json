@@ -1,0 +1,19 @@
+{
+    "customerErrorList": [
+        {
+            "ic4proErrorId": "I10123445-08013546727",
+            "ic4proCustomerId": "I10123445",
+            "ic4proFullName": "Olufemi Samuel Ademola",
+            "ic4proErrorCode": "ERROR-01",
+            "ic4proMessages": "Identitty Expired",
+            "ic4proLanguage": "en",
+            "ic4proUserLocation": "branch01",
+            "ic4proRecordDate": "20210901",
+            "ic4proRecordTime": "1430",
+            "ic4proOperator": "kettle",
+            "ic4proOperation": "View",
+            "ic4proWorkstation": "12344-8YUR",
+            "ic4proRecordCounter": "2"
+        }
+    ]
+}

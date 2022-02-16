@@ -1,0 +1,26 @@
+{
+    "riskRating": [
+        {
+            "ic4proCustomerRiskId": "I10123445-CITY",
+            "ic4proCustomerId": "I10123445",
+            "ic4proFullName": "Olufemi Samuel Ademola",
+            "ic4proRiskType ": "CITY",
+            "ic4proPrevRiskValue": "3",
+            "ic4proPrevRiskRating": "Low",
+            "ic4proCurRiskValue": "2",
+            "ic4proCurRiskRating": "High",
+            "ic4proUpdatedDate": "20210201"
+        },
+        {
+            "ic4proCustomerRiskId": "I10123445-TOWN",
+            "ic4proCustomerId": "I10123445",
+            "ic4proFullName": "Olufemi Samuel Ademola",
+            "ic4proRiskType ": "TOWN",
+            "ic4proPrevRiskValue": "3",
+            "ic4proPrevRiskRating": "Low",
+            "ic4proCurRiskValue": "2",
+            "ic4proCurRiskRating": "High",
+            "ic4proUpdatedDate": "20210201"
+        }
+    ]
+}

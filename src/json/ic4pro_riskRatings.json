@@ -1,0 +1,226 @@
+The following buttons are expected:
+
+1.   Create
+2.   Edit
+3.   View
+4.   More  (1.  Classification Analysis,
+            2.  Distribution Analysis
+			3.  Pattern and Distribution Analysis)
+			
+Note:   No delete function
+
+
+Other buttons are:  Export / Download
+
+
+Apps Name:    Adroit_ic4pro_riskRatings.json
+
+Table:    fic4_riskratings
+
+[
+// tab 1: Risk Rating Model
+	 {
+      "ic4proRiskId": "501-en"    ; No input        ;  combination of ic4proModelId :  hypen : ic4proLanguage
+      "ic4proModelId":  501  range from 501 to 599
+      "ic4proRisk":"LOW",
+      "ic4proRiskColour": "f12345",  drop down to ic4pro_colors.json
+      "ic4proLowerBand":1,  integer  (Cannot be greater than 100
+      "ic4proUpperBand":4,   integer  (Cannot be greater than 100
+      "ic4proBandDesc":"It is low and no action for now",
+	  "ic4proImplication": Memo
+	  "ic4proAction" :  Memo
+
+// tab 2:  Risk Final Remarks
+      "ic4proFinalLowerBand":"1",
+      "ic4proFinalUpperBand":"8",
+      "ic4proFinalRemark":"No action for now",
+      "ic4proFinalImplication":  Memo   ;"Keep watching the accounts",
+      "ic4proFinalAction":   Memo;    "Ask your team on what to do", 
+
+    	  
+// tab 3:  Risk Overdue
+	  "ic4proOverdueTime": 30,  numeric, it will be in minutes eg 30mins , 60min etc
+	  "ic4proOverdueRepeat": 8, 'numeric, 1 to 10
+	  "ic4proRepeatChange": 0,  numeric, 0 to 10, must less than overdueRepeat
+	  "ic4proRepeatTimeChange":0  numeric, it will be in minutes eg 30mins , 60min etc
+	  "ic4proOverdueNote":  memo,
+	  
+// tab 4:  Percentile Distributions
+	  "percentile":[
+	      {
+			"ic4proLowerPercentile": 0.1,
+			"ic4proUpperPercentile": 25.99,
+			"i4proImplication":"The value is not too bad",
+			"ic4proAction": "Make sure the branch call for reignforcement"
+		  }
+		  {
+			"ic4proLowerPercentile": 30,
+			"ic4proUpperPercentile": 100.00,
+			"i4proImplication":"The value is Average",
+			"ic4proAction": "Discuss with the staff"
+		  }
+	    ],	  
+	  
+	  
+ // tab 5:   Next Risk Escallation
+	  "ic4proNextRiskId": "502-en",  * drop down to ic4pro_riskassessment -riskId field
+	  "ic4proNextRiskNote": memo
+	 	  
+// tab 6:  Audit log and status
+      "ic4proLanguage": "en",
+     "ic4proUserLocation":'Branch001',
+     "ic4proRecordDate":20200603,
+     "ic4proRecordTime":103040,
+     "ic4proOperator":"adroit",
+     "ic4proOperation": drop down to ic4pro_operations.json
+     "ic4proWorkstation":"xxxxxx0-183668",
+     "ic4proRecordCounter":"1"			
+      },
+	  
+]	
+
+
+============================================================
+
+Apps Name:    Adroit_ic4pro_riskRatings_his.json
+
+Table:    fic4_riskratings_his
+
+
+[
+// tab 1: Risk Assessments
+	 {
+	  "ic4proHistoryId":"501-en;1"
+      "ic4proRiskId": "501-en"   
+      "ic4proModelId":  501  range from 501 to 599
+      "ic4proRisk":"LOW",
+      "ic4proRiskColour": "f12345",  drop down to ic4pro_colors.json
+      "ic4proLowerBand": 1,
+      "ic4proUpperBand": 4,
+      "ic4proBandDesc":"It is low and no action for now",
+	  "ic4proImplication": Memo
+	  "ic4proAction" :  Memo
+
+// tab 2:  Risk Final Remarks
+      "ic4proFinalLowerBand":"1",
+      "ic4proFinalUpperBand":"8",
+      "ic4proFinalRemark":"No action for now",
+      "ic4proFinalImplication":  Memo   ;"Keep watching the accounts",
+      "ic4proFinalAction":   Memo;    "Ask your team on what to do", 
+
+// tab 3:  Risk Overdue
+	  "ic4proOverdueTime": 30,  numeric, it will be in minutes eg 30mins , 60min etc
+	  "ic4proOverdueRepeat": 8, 'numeric, 1 to 10
+	  "ic4proRepeatChange": 0,  numeric, 0 to 10, must less than overdueRepeat
+	  "ic4proRepeatTimeChange":0  numeric, it will be in minutes eg 30mins , 60min etc
+	  "ic4proOverdueNote":  memo,
+	  
+// tab 4:  Percentile Distributions
+	  "percentile":[
+	      {
+			"ic4proLowerPercentile": 0.1,
+			"ic4proUpperPercentile": 25.99,
+			"i4proImplication":"The value is not too bad",
+			"ic4proAction": "Make sure the branch call for reignforcement"
+		  }
+		  {
+			"ic4proLowerPercentile": 30,
+			"ic4proUpperPercentile": 100.00,
+			"i4proImplication":"The value is Average",
+			"ic4proAction": "Discuss with the staff"
+		  }
+	    ],	  
+	  
+	  
+ // tab 5:   Next Risk Escallation
+	  "ic4proNextRiskId": "502-en",  * drop down to ic4pro_riskassessment -riskId field
+	  "ic4proNextRiskNote": memo
+	 	  	  
+// tab 6:  Audit log and status
+    "ic4proLanguage":   en         
+    "ic4proUserLocation":  branch       
+    "ic4proRecordDate":  20210621          
+    "ic4proRecordTime":    150630          
+    "ic4proOperator":     emma            
+    "ic4proOperation":    create           
+    "ic4proWorkstation":   xxxxxx0-1836688         
+    "ic4proRecordCounter":  1       
+    "ic4proModifier":     femi            
+    "ic4proDateModified":    20210623        
+    "ic4proTimeModified":      180701        
+    "ic4proModifierTerminal":   hj1341345-18666  	
+      },
+	  
+]	
+
+==================================================================
+
+Apps Name:    Adroit_ic4pro_riskRatings_del.json
+
+Table:    fic4_riskratings_del
+
+
+[
+// tab 1: Risk Assessments
+	 {
+      "ic4proRiskId": "501-en"    
+      "ic4proModelId":  501,  
+      "ic4proRisk":"LOW",
+      "ic4proRiskColour": "f12345", 
+      "ic4proLowerBand": 1,
+      "ic4proUpperBand": 4,
+      "ic4proBandDesc":"It is low and no action for now",
+	  "ic4proImplication": Memo
+	  "ic4proAction" :  Memo
+
+// tab 2:  Risk Final Remarks
+      "ic4proFinalLowerBand":"1",
+      "ic4proFinalUpperBand":"8",
+      "ic4proFinalRemark":"No action for now",
+      "ic4proFinalImplication":  Memo   ;"Keep watching the accounts",
+      "ic4proFinalAction":   Memo;    "Ask your team on what to do", 
+
+// tab 3:  Risk Overdue
+	  "ic4proOverdueTime": 30,  numeric, it will be in minutes eg 30mins , 60min etc
+	  "ic4proOverdueRepeat": 8, 'numeric, 1 to 10
+	  "ic4proRepeatChange": 0,  numeric, 0 to 10, must less than overdueRepeat
+	  "ic4proRepeatTimeChange":0  numeric, it will be in minutes eg 30mins , 60min etc
+	  "ic4proOverdueNote":  memo,
+	  
+// tab 4:  Percentile Distributions
+	  "percentile":[
+	      {
+			"ic4proLowerPercentile": 0.1,
+			"ic4proUpperPercentile": 25.99,
+			"i4proImplication":"The value is not too bad",
+			"ic4proAction": "Make sure the branch call for reignforcement"
+		  }
+		  {
+			"ic4proLowerPercentile": 30,
+			"ic4proUpperPercentile": 100.00,
+			"i4proImplication":"The value is Average",
+			"ic4proAction": "Discuss with the staff"
+		  }
+	    ],	  
+	  	  
+	  
+ // tab 5:   Next Risk Escallation
+	  "ic4proNextRiskId": "502-en",  * drop down to ic4pro_riskassessment -riskId field
+	  "ic4proNextRiskNote": memo
+	 	  	  
+// tab 6:  Audit log and status
+     "ic4proLanguage": "en",
+     "ic4proUserLocation":'Branch001',
+     "ic4proRecordDate":20200603,
+     "ic4proRecordTime":103040,
+     "ic4proOperator":"adroit",
+     "ic4proOperation": drop down to ic4pro_operations.json
+     "ic4proWorkstation":"11.20.10.1",
+     "ic4proRecordCounter":"1"
+	 "ic4proDateDeleted": 20210624
+	 "ic4proTimeDeleted": 145001
+	 "ic4proRecordDeleter":  femi
+	 "ic4proTerminal":  macAddress-ipAddress	
+      },
+	  
+]	

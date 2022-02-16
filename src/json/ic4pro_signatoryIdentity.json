@@ -1,0 +1,38 @@
+ [
+        {
+            "CustomerId": "I10123445",
+            "FullName": "Olufemi Samuel Ademola",
+            "IdentifierNo": "A8888190",
+            "IdentifierCode": "C",
+            "IdentifierType": "Passport",
+            "IdentifierIssuer": "Immigration",
+            "IssuerCountry": "Nigeria",
+            "IssueDate": "20180701",
+            "ExpiryDate": "20250701",
+            "OtherId": "None",
+            "IdentifierCounty": "Lagos",
+            "IdentifierState": "Lagos",
+            "IdentifierStatus": "Valid",
+            "Language": "en",
+            "UserLocation": "branch01",
+            "RecordDate": "20210701",
+            "RecordTime": "1420",
+            "Operator": "cityboy",
+            "Operation": "Create",
+            "Workstation": "121340-9284",
+            "RecordCounter": "1"
+        },
+        {
+            "CustomerId": "I8298074",
+            "FullName": "Lola Ifejowa",
+            "IdentifierNo": "H77788190",
+            "IdentifierCode": "D",
+            "IdentifierType": "Driver Licence",
+            "IdentifierIssuer": "FRSC",
+            "IssuerCountry": "Nigeria",
+            "IssueDate": "20170701",
+            "ExpiryDate": "20280801",
+            "IdentifierCounty": "Lagos",
+            "IdentifierState": "Lagos"
+        }
+    ]

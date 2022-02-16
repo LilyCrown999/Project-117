@@ -1,0 +1,39 @@
+{
+    "signatoryNextofKin": [
+        {
+            "ic4proRecId": "I10123445-Olufemi",
+            "ic4proCustomerId": "I10123445",
+            "ic4proFullName": "Olufemi Samuel Ademola",
+            "ic4proLanguage": "en",
+            "ic4proUserLocation": "branch01",
+            "ic4proRecordDate": "20211012",
+            "ic4proRecordTime": "930",
+            "ic4proOperator": "Mobile",
+            "ic4proOperation": "View",
+            "ic4proWorkstation": "WK7830",
+            "ic4proRecordCounter": "1"
+        },
+        {
+            "ic4proRecId": "I8298074-Lola",
+            "ic4proCustomerId": "I8298074",
+            "ic4proFullName": "Lola Ifejowa",
+            "ic4proNokTitle": "Mr",
+            "ic4proNokFirstName": "Junior",
+            "ic4proNokMiddleName": "H",
+            "ic4proNokLastName": "Brother",
+            "ic4proNokAddress1": "34 York Road",
+            "ic4proNokAddress2": "Address 2",
+            "ic4proNokPhone": "0702361578",
+            "ic4proNokEmail": "prince@kayt.com",
+            "ic4proNokRelationship": "Spouse",
+            "ic4proLanguage": "en",
+            "ic4proUserLocation": "branch01",
+            "ic4proRecordDate": "20211015",
+            "ic4proRecordTime": "1015",
+            "ic4proOperator": "Mobile2",
+            "ic4proOperation": "Edit",
+            "ic4proWorkstation": "WK7830",
+            "ic4proRecordCounter": "1"
+        }
+    ]
+}

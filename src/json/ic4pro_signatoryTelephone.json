@@ -1,0 +1,26 @@
+
+[
+        {
+            "CustomerId": "I10123445",
+            "FullName": "Olufemi Samuel Ademola",
+            "CountryCode": "234",
+            "PhoneNumber": "08013546727",
+            "PhoneType": "Land",
+            "ImeiNumber": "IM23456UU",
+            "Language": "en",
+            "UserLocation": "branch01",
+            "RecordDate": "20210703",
+            "RecordTime": "1820",
+            "Operator": "lapwork",
+            "Operation": "Edit",
+            "Workstation": "yu1236-0999",
+            "RecordCounter": "2"
+        },
+        {
+            "CustomerId": "I8298074",
+            "FullName": "Lola Ifejowa",
+            "CountryCode": "234",
+            "PhoneNumber": "07014567633",
+            "PhoneType": "Mobile"
+        }
+    ]

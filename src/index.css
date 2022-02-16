@@ -2,3 +2,16 @@
 .search{
     color: black;
 }
+
+.parent {
+    display: flex;
+  }
+  
+  .child {
+    flex: 1;
+  }
+
+  .Page{
+    padding: 1%;
+
+  }

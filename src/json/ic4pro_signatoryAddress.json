@@ -1,0 +1,24 @@
+ [
+        {
+            "CustomerId": "I10123445",
+            "FullName": "Olufemi Samuel Ademola",
+            "StreetAddress1": "2 Kingsway",
+            "Town": "Ikeja",
+            "County": "Ikeja",
+            "State": "Lagos",
+            "PostalCode": "SW12 APP1",
+            "Country": "Nigeria",
+            "AddressType": "Home"
+        },
+        {
+            "CustomerId": "I8298074",
+            "FullName": "Lola Ifejowa",
+            "StreetAddress1": "23 Pope Road",
+            "Town": "Ikeja",
+            "County": "Ikeja",
+            "State": "Lagos",
+            "PostalCode": "NK12 W13",
+            "Country": "Nigeria",
+            "AddressType": "Home"
+        }
+]
