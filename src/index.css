@@ -17,5 +17,11 @@
   }
 
 .btnz{
-  background-color: rgb(82, 82, 82) !important;
+  color: rgb(28, 36, 37) !important;
+  /* #0d6efd */
+}
+
+.btn-tab{
+  color: white;
+  background-color: #0d6efd;
 }

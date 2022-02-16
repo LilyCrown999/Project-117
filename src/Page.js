@@ -42,7 +42,7 @@ const Page = () => {
     setData6(data_6)
     setData7(data_7)
 
-  }, [])
+  }, [q])
 
   function search(rows) {
     const newData2 = rows.filter(x => x.LastName.toLowerCase().indexOf(q) > -1 )
@@ -91,17 +91,17 @@ const Page = () => {
             <Table>
               <tr>
                 <td>
-                  <input className='form-control' type="text" value={q} onChange={(e) => setQ(e.target.value)} placeholder="lola"/>
+                  <input className='form-control' type="text" value={q.toLowerCase()} onChange={(e) => setQ(e.target.value)} placeholder="lola"/>
                 </td>
                 <td>
-                  <select className="form-control btn btn-secondary dropdown-toggle search btnz"  onChange={(e) => {setVal(e.target.value)}} >
+                  <select className="form-control btn btn-primary dropdown-toggle search btnz"  onChange={(e) => {setVal(e.target.value)}} >
                         <option selected disabled hidden >-Select -</option>
                         <option value="firstname">Firstname</option>
                         <option value="lastname" >Lastname</option>
                   </select>
                 </td>
                 <td>
-                <button className='btn btn-secondary form-control' onClick={() => (
+                <button className='btn btn-primary form-control' onClick={() => (
                   search2(data_2),
                   search3(data_3),
                   search4(data_4),
