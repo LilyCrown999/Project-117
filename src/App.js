@@ -1,8 +1,7 @@
 
-import Page from './Page';
 
 export const App = () => {
   return (
-      <Page />
+    <h1>Hello world !!!</h1>
   )
 }
