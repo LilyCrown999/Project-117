@@ -58,8 +58,7 @@ const App = () => {
     // const newData = row.filter( row => row.FirstName.toLowerCase().indexOf(q) > -1 )
     // console.log(newData2)
     const news = data.filter(x => x.CustomerId === rows.CustomerId)
-    console.log(news)
-
+    // console.log(news)
     return news
   }
 
