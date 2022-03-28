@@ -1,0 +1,54 @@
+
+
+.head{
+    margin-left: 2%;
+    font-weight: 600;
+}
+.card-body-default {
+    padding: .1rem 1rem !important;
+}
+.card-body{
+    padding: 0rem !important;
+}
+
+.card-head{
+    padding: .3rem 1rem !important;
+    background-color: rgb(20, 68, 88) !important;
+    color: #f9f9f9;
+}
+
+.tab2{
+    padding: none;
+}
+
+.inve{
+    /* margin: 2px; */
+    margin-right: 6px;
+    border: 1px solid rgba(0,0,0,.125) !important;
+    font-size: smaller;
+    /* font-weight: 300; */
+    height: 120px;
+}
+
+.inve>*{
+    width: 100%;
+    color: rgb(20, 68, 88);
+    max-height: inherit;
+    overflow-y: auto;
+}
+
+.inve>select{
+    color: gray;
+}
+
+#additional-details{
+    color: gray;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.table td, .table th {
+    padding: 0rem !important;
+    vertical-align: baseline !important;
+    border-left: 1px solid black !important;
+}

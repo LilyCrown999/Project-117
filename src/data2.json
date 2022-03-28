@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "firstname": "Ben",
+        "lastname": "Affleck",
+        "status": "Inactive",
+        "gender": "Male"
+    },
+    {
+        "id": 2,
+        "firstname": "Tim",
+        "lastname": "Orwen",
+        "status": "Active",
+        "gender": "Male"
+    },
+    {
+        "id": 3,
+        "firstname": "Sarah",
+        "lastname": "White",
+        "status": "Active",
+        "gender": "Female"
+    },
+    {
+        "id": 4,
+        "firstname": "Jessica",
+        "lastname": "Anderson",
+        "status": "Inactive",
+        "gender": "Female"
+    },
+    {
+        "id": 5,
+        "firstname": "Jerry",
+        "lastname": "Smith",
+        "status": "Active",
+        "gender": "Male"
+    },
+    {
+        "id": 6,
+        "firstname": "Ricardo",
+        "lastname": "Sanchez",
+        "status": "Inactive",
+        "gender": "Male"
+    },
+    {
+        "id": 7,
+        "firstname": "Joshua",
+        "lastname": "Brandon",
+        "status": "Active",
+        "gender": "Male"
+    },
+    {
+        "id": 8,
+        "firstname": "Miley",
+        "lastname": "O'Brien",
+        "status": "Active",
+        "gender": "Female"
+    },
+    {
+        "id": 9,
+        "firstname": "Sam",
+        "lastname": "Warren",
+        "status": "Active",
+        "gender": "Male"
+    }
+
+]

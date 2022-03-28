@@ -1,0 +1,29 @@
+label {
+    display: block;
+  }
+  
+  form {
+    max-width: 20rem;
+    margin: 0 auto;
+  }
+  
+  input,select {
+    width: 100%;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    border: none;
+  }
+  
+  .btn {
+    margin: 2rem auto;
+    display: block;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    border: none;
+    background: #0f325a;
+    color: white;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+    background: #206bc0;
+  }
