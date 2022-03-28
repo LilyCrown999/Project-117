@@ -1,0 +1,30 @@
+
+/* .parent {
+  display: flex;
+} */
+
+  /* .child {
+    flex: 1;
+  } */
+
+  table{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  }
+
+  th{
+    color: white;
+    background-color: #0d6efd !important;
+
+  }
+
+  #main-td{
+    cursor: pointer;
+  }
+  
+  table{
+    /* margin: 13px !important; */
+    /* border: 8px !important; */
+    white-space: nowrap;
+    /* border-color: transparent !important; */
+  }
