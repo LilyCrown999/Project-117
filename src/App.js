@@ -48,7 +48,7 @@ const App = () => {
   }, [q])
 
   const [row, setRow] = useState([])
-  console.log(row)
+  // console.log(row)
   
   const array = ["First Name", "Last Name", "Signatory"]
 
